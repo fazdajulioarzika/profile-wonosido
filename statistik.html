@@ -71,20 +71,16 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4 text-center">
           <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Jenis Kelamin Penduduk</h2>
+            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Jenis Kelamin</h2>
             <canvas id="chartPenduduk"></canvas>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
             <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Mata Pencaharian</h2>
             <canvas id="chartProfesi"></canvas>
           </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">35</h2>
-            <p class="leading-relaxed">Downloads</p>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">4</h2>
-            <p class="leading-relaxed">Products</p>
+          <div class="p-4 w-full md:w-1/2">
+            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Nilai Indeks Desa Membangun</h2>
+            <canvas id="chartIDM"></canvas>
           </div>
         </div>
       </div>
@@ -215,7 +211,7 @@
         datasets: [
           {
             label: 'Data Jenis Kelamin Penduduk Wonosido',
-            data: [207, 231],
+            data: [258, 225],
             backgroundColor: ['rgb(54, 162, 235)', 'rgb(255, 99, 132)'],
             hoverOffset: 4,
           },
@@ -232,6 +228,19 @@
           },
         ],
       };
+      const labelsTahun = ['2019', '2020', '2021', '2022', '2023'];
+      const dataIDM = {
+        labels: labelsTahun,
+        datasets: [
+          {
+            label: 'My First Dataset',
+            data: [0.5695, 0.6308, 0.6475, 0.6692, 0.6692],
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1,
+          },
+        ],
+      };
 
       // Konfigurasi chart
       const configPenduduk = {
@@ -243,9 +252,15 @@
         data: dataProfesi,
       };
 
+      const configIDM = {
+        type: 'line',
+        data: dataIDM,
+      };
+
       // Inisialisasi dan render chart di elemen canvas
       const chartPenduduk = new Chart(document.getElementById('chartPenduduk'), configPenduduk);
       const chartProfesi = new Chart(document.getElementById('chartProfesi'), configProfesi);
+      const chartIDM = new Chart(document.getElementById('chartIDM'), configIDM);
     </script>
   </body>
 </html>
