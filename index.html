@@ -27,9 +27,9 @@
             <li>
               <a>Lembaga</a>
               <ul class="p-2">
+                <li><a>Pemerintah Desa</a></li>
                 <li><a>Posyandu</a></li>
                 <li><a>Karang Taruna</a></li>
-                <li><a>IPNU IPPNU</a></li>
               </ul>
             </li>
           </ul>
@@ -49,16 +49,16 @@
             <details class="dropdown">
               <summary class="">Lembaga</summary>
               <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 border-2">
+                <li><a>Pemerintah Desa</a></li>
                 <li><a>Posyandu</a></li>
                 <li><a>Karang Taruna</a></li>
-                <li><a>IPNU IPPNU</a></li>
               </ul>
             </details>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="hidden md:flex button-main" href="#contact">Hubungi Kami</a>
+        <a class="hidden md:flex button-main" href="index.html#contact">Hubungi Kami</a>
       </div>
     </div>
     <!-- endNavbar -->
@@ -252,7 +252,7 @@
     <section id="berita" class="p-12 overflow-hidden" style="background-image: url(img/bg-news.jpg); background-size: cover">
       <div class="flex flex-wrap justify-center px-5 py-10 mx-auto">
         <div class="flex w-full mb-4 flex-col items-center text-center">
-          <h1 class="text-2xl lg:text-4xl font-medium title-font m-2 text-gray-800">Berita</h1>
+          <h1 class="text-2xl lg:text-4xl font-medium title-font m-2 text-white">Berita</h1>
         </div>
       </div>
       <div class="swiper w-full h-full mySwiper">
@@ -565,21 +565,30 @@
       // gsap.from('.hero', { duration: 1, y: -100, opacity: 0, ease: 'bounce' });
       // gsap.from('.img-hero', { duration: 1, x: -100, opacity: 0 });
 
-      var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 2, // Jumlah slide per view untuk lebar layar default
-        centeredSlides: true,
-        spaceBetween: 0,
-        grabCursor: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 4,
+      function initSwiper() {
+        var screenWidth = window.innerWidth;
+        var slidesPerView;
+
+        // Menentukan nilai slidesPerView berdasarkan lebar layar
+        if (screenWidth < 600) {
+          slidesPerView = 1;
+        } else if (screenWidth < 900) {
+          slidesPerView = 2;
+        } else {
+          slidesPerView = 3;
+        }
+
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: slidesPerView,
+          centeredSlides: false,
+          spaceBetween: 0,
+          grabCursor: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
           },
-        },
-      });
+        });
+      }
 
       // Memanggil fungsi saat halaman dimuat dan saat layar diubah ukurannya
       document.addEventListener('DOMContentLoaded', initSwiper);
