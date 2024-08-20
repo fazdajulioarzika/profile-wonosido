@@ -8578,6 +8578,10 @@ html:has(.drawer-open.drawer-open) {
   margin-bottom: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -8634,6 +8638,10 @@ html:has(.drawer-open.drawer-open) {
   margin-top: 5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -8652,14 +8660,6 @@ html:has(.drawer-open.drawer-open) {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .box-border {
@@ -8836,10 +8836,6 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-40 {
-  min-width: 10rem;
 }
 
 .max-w-full {
@@ -9053,12 +9049,12 @@ html:has(.drawer-open.drawer-open) {
   list-style-position: outside;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .list-disc {
   list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .appearance-none {
@@ -10216,10 +10212,6 @@ html:has(.drawer-open.drawer-open) {
   font-weight: 600;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -11111,19 +11103,14 @@ html:has(.drawer-open.drawer-open) {
     text-align: left;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -11169,16 +11156,16 @@ html:has(.drawer-open.drawer-open) {
     width: 33.333333%;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:w-3\/5 {
     width: 60%;
   }
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
   }
 
   .lg\:max-w-lg {

@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="output.css" rel="stylesheet" />
-
     <title>PROFILE DESA | WONOSIDO</title>
   </head>
   <body>
@@ -70,27 +68,23 @@
     </div>
     <!-- endNavbar -->
 
-    <!-- statistik -->
-    <h1 class="title-font sm:text-4xl text-3xl mb-4 mt-32 font-medium text-gray-900 text-center" data-aos="fade-down" data-aos-duration="1500">Statistik Desa Wonosido</h1>
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4 text-center">
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Jenis Kelamin</h2>
-            <canvas id="chartPenduduk"></canvas>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Mata Pencaharian</h2>
-            <canvas id="chartProfesi"></canvas>
-          </div>
-          <div class="p-4 w-full md:w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Nilai Indeks Desa Membangun</h2>
-            <canvas id="chartIDM"></canvas>
-          </div>
+    <!-- sejarah -->
+    <section class="text-gray-600 body-font" id="sejarah">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" data-aos="fade-down" data-aos-duration="1500">Sejarah Desa Wonosido</h1>
+        <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/800x400" data-aos="fade-down" data-aos-duration="1500" />
+        <div class="text-center lg:w-2/3 w-full" data-aos="fade-up" data-aos-duration="1500">
+          <p class="mb-8 leading-relaxed">
+            Pada Jaman dahulu ada dua orang pemuda pengembara yang mencari penghidupan di hutan, mereka menetap dihutan dan mendirikan sebuah gubuk sebagai tempat tinggal. Mereka menggarap sebidang tanah sebagai lahan bercocok tanam untuk
+            mata pencaharian dan guna menyambung hidup. Kedua pemuda tersebut bernama Ki Wantar dan Ki Wanajaya. Setelah beberapa tahun, tersebar kabar ke beberapa tempat bahwa mereka berdua berhasil bercocok tanam di tempat tersebut.
+            Kemudian datanglah dua perempuan bernama Nyai Wajem dan Nyai Kasih yang ingin ikut mengadu nasib ditempat tersebut, akhirnya kedua wanita tersebut dijadikan istri oleh kedua pemuda tersebut. Berjalanya waktu kedua pasangan suami
+            istri tersebut mempunyai banyak keturunan dan dibangunlah beberapa gubuk sebagai tempat tinggal mereka. Akhirnya berkembang menjadi sebuah peDusunan atau kampung kecil. Seiring perkembangannya jumlah penduduk mulai bertambah
+            banyak kemudian berkembang menjadi sebuah kampung. Karena letaknya di tengah Hutan yang lebat maka kampung tersebut dinamakan Wonosido, konon Wonosido di ambil dari kata Wono yang berarti Hutan, dan Sido yang berarti Jadi/Lebat.
+          </p>
         </div>
       </div>
     </section>
-    <!-- endStatistik -->
+
     <!-- footer -->
 
     <footer class="text-gray-900 body-font bg-gray-200">
@@ -165,23 +159,23 @@
             KKN 03 ITSNU PEKALONGAN KELOMPOK 19 | DESA WONOSIDO, LEBAKBARANG, PEKALONGAN
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a class="text-white hover:text-blue-600">
+            <a class="text-white hover:text-orange-600">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a class="ml-3 text-white hover:text-blue-600">
+            <a class="ml-3 text-white hover:text-orange-600">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a class="ml-3 text-white hover:text-blue-600">
+            <a class="ml-3 text-white hover:text-orange-600">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a class="ml-3 text-white hover:text-blue-600">
+            <a class="ml-3 text-white hover:text-orange-600">
               <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
                 <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
@@ -202,6 +196,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="https://unpkg.com/split-type"></script>
     <script>
@@ -209,62 +204,35 @@
       gsap.to('.textrun', { duration: 2, delay: 0.5, text: 'WONOSIDO' });
       // gsap.from('.hero', { duration: 1, y: -100, opacity: 0, ease: 'bounce' });
       // gsap.from('.img-hero', { duration: 1, x: -100, opacity: 0 });
-      // Data untuk chart
-      const dataPenduduk = {
-        labels: ['Laki-Laki', 'Perempuan'],
-        datasets: [
-          {
-            label: 'Data Jenis Kelamin Penduduk Wonosido',
-            data: [258, 225],
-            backgroundColor: ['rgb(54, 162, 235)', 'rgb(255, 99, 132)'],
-            hoverOffset: 4,
-          },
-        ],
-      };
-      const dataProfesi = {
-        labels: ['Petani', 'Lain-Lain'],
-        datasets: [
-          {
-            label: 'Data Mata Pencaharian Penduduk Wonosido',
-            data: [90, 10],
-            backgroundColor: ['rgb(125, 224, 121)', 'rgb(255, 182, 56)'],
-            hoverOffset: 4,
-          },
-        ],
-      };
-      const labelsTahun = ['2019', '2020', '2021', '2022', '2023'];
-      const dataIDM = {
-        labels: labelsTahun,
-        datasets: [
-          {
-            label: 'My First Dataset',
-            data: [0.5695, 0.6308, 0.6475, 0.6692, 0.6692],
-            fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1,
-          },
-        ],
-      };
 
-      // Konfigurasi chart
-      const configPenduduk = {
-        type: 'pie',
-        data: dataPenduduk,
-      };
-      const configProfesi = {
-        type: 'pie',
-        data: dataProfesi,
-      };
+      function initSwiper() {
+        var screenWidth = window.innerWidth;
+        var slidesPerView;
 
-      const configIDM = {
-        type: 'line',
-        data: dataIDM,
-      };
+        // Menentukan nilai slidesPerView berdasarkan lebar layar
+        if (screenWidth < 600) {
+          slidesPerView = 1;
+        } else if (screenWidth < 900) {
+          slidesPerView = 2;
+        } else {
+          slidesPerView = 3;
+        }
 
-      // Inisialisasi dan render chart di elemen canvas
-      const chartPenduduk = new Chart(document.getElementById('chartPenduduk'), configPenduduk);
-      const chartProfesi = new Chart(document.getElementById('chartProfesi'), configProfesi);
-      const chartIDM = new Chart(document.getElementById('chartIDM'), configIDM);
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: slidesPerView,
+          centeredSlides: false,
+          spaceBetween: 0,
+          grabCursor: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      }
+
+      // Memanggil fungsi saat halaman dimuat dan saat layar diubah ukurannya
+      document.addEventListener('DOMContentLoaded', initSwiper);
+      window.addEventListener('resize', initSwiper);
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
