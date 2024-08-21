@@ -9,3 +9,10 @@
   @apply w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
   w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;
 }
+
+.img-blob {
+  mask-image: url(img/blob.svg);
+  mask-repeat: no-repeat;
+  mask-size: 110%;
+  mask-position: center;
+}
