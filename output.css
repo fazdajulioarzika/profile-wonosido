@@ -8547,10 +8547,6 @@ html:has(.drawer-open.drawer-open) {
   margin: 0.5rem;
 }
 
-.m-24 {
-  margin: 6rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -8569,6 +8565,11 @@ html:has(.drawer-open.drawer-open) {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .-mb-10 {
@@ -10097,6 +10098,11 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -10107,6 +10113,10 @@ html:has(.drawer-open.drawer-open) {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.ps-8 {
+  padding-inline-start: 2rem;
 }
 
 .text-left {
@@ -10344,19 +10354,14 @@ html:has(.drawer-open.drawer-open) {
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
-.text-secondary {
+.text-slate-600 {
   --tw-text-opacity: 1;
-  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-600 {
-  --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -11218,12 +11223,21 @@ html:has(.drawer-open.drawer-open) {
     align-items: flex-start;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .lg\:pl-6 {
     padding-left: 1.5rem;
   }
 
   .lg\:pr-24 {
     padding-right: 6rem;
+  }
+
+  .lg\:ps-32 {
+    padding-inline-start: 8rem;
   }
 
   .lg\:text-left {

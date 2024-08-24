@@ -70,27 +70,35 @@
     </div>
     <!-- endNavbar -->
 
-    <!-- statistik -->
-    <h1 class="title-font sm:text-4xl text-3xl mb-4 mt-32 font-medium text-gray-900 text-center" data-aos="fade-down" data-aos-duration="1500">Statistik Desa Wonosido</h1>
+    <!-- Struktur -->
+    <h1 class="title-font sm:text-4xl text-3xl mb-4 mt-32 font-medium text-gray-900 text-center" data-aos="fade-down" data-aos-duration="1500">Susunan Organisasi Tata Kerja Lembaga Pemberdayaan Masyarakat Desa Wonosido</h1>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4 text-center">
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Jenis Kelamin</h2>
-            <canvas id="chartPenduduk"></canvas>
-          </div>
-          <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Mata Pencaharian</h2>
-            <canvas id="chartProfesi"></canvas>
-          </div>
-          <div class="p-4 w-full md:w-1/2">
-            <h2 class="title-font font-medium sm:text-2xl text-xl text-gray-900">Nilai Indeks Desa Membangun</h2>
-            <canvas id="chartIDM"></canvas>
-          </div>
+      <div class="container px-5 py-12 lg:py-4 items-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="flex flex-wrap w-full md:w-2/3 mx-auto justify-center">
+          <img src="img/struktur/strukturlpmd.png" alt="" />
+        </div>
+      </div>
+      <div class="w-full px-4 my-16">
+        <h1 class="sm:text-3xl text-center text-2xl font-medium title-font mb-6 text-orange-600" data-aos="fade-down" data-aos-duration="1000">Struktur Organisasi</h1>
+        <div class="w-full lg:w-2/3 mx-auto flex flex-wrap" data-aos="fade-right" data-aos-duration="1000">
+          <table>
+            <tr>
+              <td class="text-lg font-medium py-2">Ketua</td>
+              <td class="ps-8 lg:ps-32 py-2">: Dasto</td>
+            </tr>
+            <tr>
+              <td class="text-lg font-medium py-2">Sekretaris</td>
+              <td class="ps-8 lg:ps-32 py-2">: Eko Kurniadi</td>
+            </tr>
+            <tr>
+              <td class="text-lg font-medium py-2">Anggota</td>
+              <td class="ps-8 lg:ps-32 py-2">: Darso I, Darso II, Tarjuki, Tasro, Kaliri, Dasmo, Solihin, Eti Khosirin</td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
-    <!-- endStatistik -->
+    <!-- endStruktur -->
     <!-- footer -->
 
     <footer class="text-gray-900 body-font bg-gray-200">
@@ -210,61 +218,6 @@
       // gsap.from('.hero', { duration: 1, y: -100, opacity: 0, ease: 'bounce' });
       // gsap.from('.img-hero', { duration: 1, x: -100, opacity: 0 });
       // Data untuk chart
-      const dataPenduduk = {
-        labels: ['Laki-Laki', 'Perempuan'],
-        datasets: [
-          {
-            label: 'Data Jenis Kelamin Penduduk Wonosido',
-            data: [258, 225],
-            backgroundColor: ['rgb(54, 162, 235)', 'rgb(255, 99, 132)'],
-            hoverOffset: 4,
-          },
-        ],
-      };
-      const dataProfesi = {
-        labels: ['Petani', 'Lain-Lain'],
-        datasets: [
-          {
-            label: 'Data Mata Pencaharian Penduduk Wonosido',
-            data: [90, 10],
-            backgroundColor: ['rgb(125, 224, 121)', 'rgb(255, 182, 56)'],
-            hoverOffset: 4,
-          },
-        ],
-      };
-      const labelsTahun = ['2019', '2020', '2021', '2022', '2023'];
-      const dataIDM = {
-        labels: labelsTahun,
-        datasets: [
-          {
-            label: 'My First Dataset',
-            data: [0.5695, 0.6308, 0.6475, 0.6692, 0.6692],
-            fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1,
-          },
-        ],
-      };
-
-      // Konfigurasi chart
-      const configPenduduk = {
-        type: 'pie',
-        data: dataPenduduk,
-      };
-      const configProfesi = {
-        type: 'pie',
-        data: dataProfesi,
-      };
-
-      const configIDM = {
-        type: 'line',
-        data: dataIDM,
-      };
-
-      // Inisialisasi dan render chart di elemen canvas
-      const chartPenduduk = new Chart(document.getElementById('chartPenduduk'), configPenduduk);
-      const chartProfesi = new Chart(document.getElementById('chartProfesi'), configProfesi);
-      const chartIDM = new Chart(document.getElementById('chartIDM'), configIDM);
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
