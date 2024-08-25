@@ -8557,6 +8557,11 @@ html:has(.drawer-open.drawer-open) {
   margin-bottom: 2.5rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -8565,11 +8570,6 @@ html:has(.drawer-open.drawer-open) {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
 .-mb-10 {
@@ -10028,6 +10028,10 @@ html:has(.drawer-open.drawer-open) {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -10068,6 +10072,11 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -10098,11 +10107,6 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 2rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -10111,12 +10115,12 @@ html:has(.drawer-open.drawer-open) {
   padding-left: 1.5rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
-}
-
 .ps-8 {
   padding-inline-start: 2rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-left {
